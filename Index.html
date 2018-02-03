@@ -3,6 +3,7 @@
 	<html>
 		<title>Respect</title>
 		
+		<!-- imports the style sheet -->
 		<link rel="stylesheet"type="text/css" href="penis.css"originalAttribute="href" originalPath="penis.css"/>
 
 		<header>
@@ -12,53 +13,43 @@
 		</header>
 
 		<body>
+
 			<script>
-				<!--decrements the users respect-->
-				function loseRespect(s){
-					switch(s){
-						case "user1":
-						break;
+				function editSelected(val) {
+    					document.getElementById('selected').value = val;
+    				}						
+    		</script>
 
-						case "user2":
-						break;
-
-						case "user3":
-						break;
-
-						case "user4":
-						break;
-					}
-				}
-				<!--increments the users respect-->
-				function gainRespect(s){
-					switch(s){
-						case "user1":
-						break;
-
-						case "user2":
-						break;
-
-						case "user3":
-						break;
-
-						case "user4":
-						break;
-					}
-				}
-			</script>
-			<p>
-				<a href = "Readme.md ">Move to Readme.md</a>
-			</p>
-			
-			<select name = "selector">
-				<option value="user1">User 1</option>
-				<option value="user2">User 2</option>
-				<option value="user3">User 3</option>
-				<option value="user4">User 4</option>
+			<!-- allows the user to select who to give or take respect from -->
+			<select name = "selected">
+				<option value="1" onselect="editSelected(User 1)">User 1</option>
+				<option value="2" onselect="editSelected(User 2)">User 2</option>
+				<option value="3" onselect="">User 3</option>
+				<option value="4" onselect="editSelected(1)" ="">User 4</option>
+				
 			</select>
-
+				<button id="b" onclick="editSelected(1)">test</button>
+				<input id="selected" value=""/>
 			<p>
-				<button onclick="loseRespect()">-</button> Respect: 0 <button onclick="gainRespect()">+</button>
+
+				<!-- The function that changes respect and updates the counter -->
+				<script> 
+					var respect = 0;
+					function editRespect(val) {
+    					respect += val;
+    					document.getElementById('respect').value = respect;
+    					return new_respect;
+    				}				
+    			</script>
+
+				<!-- The label, buttons, and display for the respect counter -->
+        		<label for="respect">Respect:</label>
+        		<input id="respect" value="0" />
+        		<button id="down" onclick="editRespect(-1)">-1</button>
+        		<button id="up" onclick="editRespect(+1)">+1</button>
+    			
+
+				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> 4000 down
 			</p>
 		
 		</body>
