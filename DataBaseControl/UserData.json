@@ -1,9 +1,14 @@
 {
- "UserData": [
-  {
-   "username": "nil",
-   "password": "psss",
-   "respval": null
-  }
-  ]
+
+ "Uservalue": {
+  "username": "nil",
+  "password": "pass",
+  "respval": null
+ },
+ "User": {
+  "username": "user",
+  "password": "pass",
+  "respval": 0
+ }
+ 
 }
