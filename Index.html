@@ -2,15 +2,35 @@
 
 	<html>
 
+		<head>
+		
 		<title>Respect</title>
 		
 		<!-- imports the style sheet and icons -->
 		<link rel="stylesheet"type="text/css" href="penis.css"originalAttribute="href" originalPath="penis.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		
+			<script> 
+				var respect = 0;
+
+				<!-- The function that changes respect and updates the counter -->
+				function editRespect(val) {
+    				respect += val;
+    				document.getElementById('respect').value = respect;
+    			}			
+
+    			function editUser() {
+    				document.getElementById('user').value = document.getElementById('selected').value;
+    			}
+    		</script>
+
+		</head>
+
+		
 
 		<header>
-					<i class="fa fa-bars z"></i>
+			<i class="fa fa-bars z"></i>
 
 			<h1 class = "title border">
 				Respect
@@ -20,40 +40,23 @@
 
 		<body>
 
-			<script>
-				function editSelected(val) {
-    					document.getElementById('selected').value = val;
-    				}						
-    		</script>
-
 			<!-- allows the user to select who to give or take respect from -->
-			<select name = "selected">
-				<option value="1" onselect="editSelected(User 1)">User 1</option>
-				<option value="2" onselect="editSelected(User 2)">User 2</option>
-				<option value="3" onselect="">User 3</option>
-				<option value="4" onselect="editSelected(1)" ="">User 4</option>
-				
+			<select id="selected" onchange="editUser()">
+				<option value="User 1">User 1</option>
+				<option value="User 2">User 2</option>
+				<option value="User 3">User 3</option>
+				<option value="User 4">User 4</option>
 			</select>
-				<button class = myButton id="b" onclick="editSelected(1)">test</button>
-				<input id="selected" value=""/>
+			
 			<p>
 
-				<!-- The function that changes respect and updates the counter -->
-				<script> 
-					var respect = 0;
-					function editRespect(val) {
-    					respect += val;
-    					document.getElementById('respect').value = respect;
-    					return new_respect;
-    				}				
-    			</script>
-
 				<!-- The label, buttons, and display for the respect counter -->
+				<input id="user" value=""/>
+				<br>
         		<label for="respect">Respect:</label>
         		<input id="respect" value="0" />
         		<button class="myButton" id="down" onclick="editRespect(-1)">-1</button>
         		<button class="myButton" id="up" onclick="editRespect(+1)">+1</button>
-
 
 				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> 4000 down
 			</p>
