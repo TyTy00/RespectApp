@@ -24,6 +24,7 @@ p {
     font-size: 20px;
     text-align: center;
     color: #D5D6D9;
+    text-shadow:1px 1px 1px rgba(180, 171, 171, 0.35);
 }
 /*lame buttons*/
 .button {
@@ -40,7 +41,7 @@ p {
     cursor: pointer;
 }
 /*cool buttons*/
-.myButton {
+.Button1 {
 	-moz-box-shadow: 0px 1px 0px 0px #000000;
 	-webkit-box-shadow: 0px 1px 0px 0px #000000;
 	box-shadow: 0px 1px 0px 0px #000000;
@@ -66,7 +67,7 @@ p {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
-.myButton:hover {
+.Button1:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #faf9f5), color-stop(1, #a8a6a1));
 	background:-moz-linear-gradient(top, #faf9f5 5%, #a8a6a1 100%);
 	background:-webkit-linear-gradient(top, #faf9f5 5%, #a8a6a1 100%);
@@ -76,40 +77,68 @@ p {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf9f5', endColorstr='#a8a6a1',GradientType=0);
 	background-color:#faf9f5;
 }
-.myButton:active {
+.Button1:active {
 	position:relative;
 	top:1px;
 }
+
+.myButton {
+	-moz-box-shadow: 0px 1px 7px 2px rgba(180, 171, 171, 0.35);
+	-webkit-box-shadow: 0px 1px 7px 2px rgba(180, 171, 171, 0.35);
+	box-shadow: 0px 1px 7px 2px rgba(180, 171, 171, 0.35);
+	background-color:rgb(180, 171, 171);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:0px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 1px #2b665e;
+	transition: .5s;
+}
+.myButton:hover {
+	background-color:rgba(180, 171, 171, 0.35);
+	color:black;
+}
+.myButton:active{
+		padding: 1px 1px;
+		text-align:center;
+
+
+
+}
+
+
 /*RESPECT class (the big word at the top)*/
 .title{
 font-size: 90px;
 position: absolute;
 margin: 0px;
 color: #D5D6D9;
-text-shadow: 2px 2px rgba(180, 171, 171, 0.35);
+text-shadow: 2px 2px 20px rgba(180, 171, 171, 0.35);
 z-index:-1;
 text-align: center;
 text-align:top;
 top:0px;
 left:40%;
-position: fixed;
-
-
-
-
+position:fixed;
+transition: 1s;
 }
+
+
 /*border of smaller words*/
 .pborder{border-style: none none solid none;
 		border-color: black;
 
         }
 /*border for the BIG words*/
-.borderd{border-left:5px solid gray;
-		border-color: #D5D6D9;
-        background-color: rgba(220, 217, 208, 0.35);
-        padding: 0px 20px 0px 20px;
-        position: relative;
-        text-align:center;
+.border{	
+
 
 
         }
@@ -121,14 +150,37 @@ position: fixed;
 }
 /*middle of screen center*/
 .center{
-	position: absolute;
-	top: 50%
+	position: fixed;
+	top: 50%;
+	left:56%;
 }
 /*middle of screen and slightly to the right.*/
 .center1{
-	position: absolute;
-	top: 50%
-	right:50%;
-}
+	position: fixed;
+	top: 50%;
+	left:59%;
+		padding:5px 8px;
 
+}
+.center2{
+	position: fixed;
+	top: 50%;
+	left:43%;
+}
+.center3{
+	position:fixed;
+	top:50%;
+	left:44%;
+}
+/*size of forms*/
+.size{
+	padding:4px 4px 4px 4px;
+	text-align:center;
+	width:50px;
+	left:50%;
+	border-width:1px;
+	border-radius: 4px;
+
+
+}
 </style>
