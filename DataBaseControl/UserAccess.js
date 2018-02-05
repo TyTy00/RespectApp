@@ -48,9 +48,7 @@
                if(user == obj[key].username)
                {
                   s = obj[key]
-
-                  
-                  
+                  return s
                 }
 
                   else{
@@ -96,8 +94,17 @@
   fs.writeFile('UserData.json', json, 'utf8');
   }
 
+  function Login(user,pass){
+    userFromJson = findUser(user)
+    if(user == userFromJson.username && userFromJson.password == pass){
 
-
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+console.log(Login("nil","pass"))
 /*var exjson = {'key':'value'};
 //define key value
 exjson.key2 = {'key2':'value2'};
