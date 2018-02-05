@@ -23,6 +23,13 @@
     			function editUser() {
     				document.getElementById('user').value = document.getElementById('selected').value;
     			}
+
+    			function submit(){
+    				var username = document.getElementById('username').value;
+    				var username = document.getElementById('password').value;
+    				document.getElementById('username').value = "";
+    				document.getElementById('password').value = "";
+    			}
     		</script>
 
 		</head>
@@ -48,7 +55,13 @@
 			</select>
 				
 			<p>
-
+				<label for="Username">Username</label>
+				<input id="username" value=""/>
+				<br>
+				<label for="Password">Password</label>
+				<input id="password" value=""/>
+				<br>
+				<button id="submit" onclick="submit()">Submit</button>
 				<!-- The label, buttons, and display for the respect counter -->
 				<br>
         		<label class="center3" for="respect">Respect:</label>
