@@ -22,7 +22,7 @@
     return val;
   }
 	function newUser(user, pass){
-		fs.readFile('UserData.json', 'utf8', function readFileCallback(err, data){
+		fs.readFileSync('UserData.json', 'utf8', function readFileCallback(err, data){
    		 if (err){
    	   	  console.log(err);
    	 		 } 
@@ -38,23 +38,30 @@
 
 	function findUser(user/*use this to specify username/data/orrespval*/){
 		content = fs.readFileSync('UserData.json', 'utf8')
-      
-
+       s = null
+       
    		 	obj = JSON.parse(content); //now it an object
-            //json = JSON.stringify(obj); can create a string from object
-   		 	for(var key in obj){
-   		 		console.log(obj[key].username);
-          console.log(key)
-               if(user == obj[key].username){
-                  s = obj[key]
-                }
-                  else{
-                     s = "bad value"
-                }	
-        return s;
-			}
-	}
 
+        
+   		 	for(var key in obj){
+
+               if(user == obj[key].username)
+               {
+                  s = obj[key]
+
+                  
+                  
+                }
+
+                  else{
+                    s = "bad value"
+
+                }	
+        
+        
+			}
+      return s
+	}
   function getPassword(user){
     return findUser(user).password
   }
@@ -64,22 +71,33 @@
   }
 
   function PMrespval(user,sign){
-    fs = require('fs');
+    fs = require('fs')
     content =  fs.readFileSync('UserData.json','utf8')
     var users = JSON.parse(content);
-    console.log(users);
-    target = findUser(user)
-    if (sign == "+"){
-      users.target.respval +=1
+    var target = findUser(user)
+    for(key in users){
+
+        databaseUsername = users[key].username
+        currentUserData = target.username
+        databaseUser = users[key]
+        if(databaseUsername == currentUserData){ //verifies that the user in question and the user you 
+          //are incrementing are the same user
+          if(sign == "+"){
+            console.log(users[key].respval)
+            users[key].respval += 1
+          }
+          else if(sign == "-"){
+            users[key].respval -= 1
+          }
+        }
     }
-    else if(sign == "-"){
-      console.log(users)
-      users.target.respval-= 1
-    }
+  //writes incremented value to the permanent json storage
   json = JSON.stringify(users,0,1)
   fs.writeFile('UserData.json', json, 'utf8');
   }
-PMrespval("user","+")
+
+
+
 /*var exjson = {'key':'value'};
 //define key value
 exjson.key2 = {'key2':'value2'};

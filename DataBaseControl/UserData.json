@@ -1,5 +1,4 @@
 {
-
  "Uservalue": {
   "username": "nil",
   "password": "pass",
@@ -8,7 +7,6 @@
  "User": {
   "username": "user",
   "password": "pass",
-  "respval": 0
+  "respval": 2
  }
- 
 }
