@@ -55,19 +55,19 @@
 
 
 			<!-- allows the user to select who to give or take respect from -->
-			<select id="selected" onchange="editUser()">
+			<select class=dropdownmain id="selected" onchange="editUser()">
 				<option class=dropdown value="User 1">Drew</option>
 				<option class=dropdown value="User 2">Sam</option>
 				<option class=dropdown value="User 3">Tyler</option>
-				<option class=dropdown value="User 4">Nick</option>
+				<option  class=dropdown value="User 4">Nick</option>
 			</select>
 				
 			<p>	
 				<div id="loginDiv">
-				<label class=center6 for="Username" id="usernameLabel">Username:</label>
+				<label class="center6 p" for="Username" id="usernameLabel">Username:</label>
 				<input class="center5 size2" id="username" value=""/>
 				<br>
-				<label class=center4 for="Password" id="passwordLabel">Password:</label>
+				<label class="center4 p" for="Password" id="passwordLabel">Password:</label>
 				<input class="center7 size2" id="password" value=""/>
 				<br>
 				<button class="myButton center8" id="submit" onclick="submit()">Submit</button>
@@ -76,7 +76,7 @@
 
 				<!-- The label, buttons, and display for the respect counter -->
 				<div id="respectDiv">
-        		<label class="center3" for="respect" id="respectLabel">Respect:</label>
+        		<label class="center3 p" for="respect" id="respectLabel">Respect:</label>
         		<input class = "center2 size" id="respect" value="0" />
         		<button class="myButton center" id="down" onclick="editRespect(-1)">-1</button>
         		<button class="myButton center1" id="up" onclick="editRespect(+1)">+1</button>
