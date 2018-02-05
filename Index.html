@@ -9,9 +9,10 @@
 		<!-- imports the style sheet and icons -->
 		<link rel="stylesheet"type="text/css" href="peins.css"originalAttribute="href" originalPath="peins.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+			<script src="DataBaseControl/UserAccess.js"></script>
 		
 			<script> 
+
 				var respect = 0;
 
 				function hideStuff(){
@@ -31,11 +32,15 @@
     			function submit(){
     				var username = document.getElementById('username').value;
     				var password = document.getElementById('password').value;
+
+    				if(Login(username, password)){
+    					document.getElementById("respectDiv").style.display = "";
+    					document.getElementById("loginDiv").style.display = "none";
+    				}
+
     				document.getElementById('username').value = "";
     				document.getElementById('password').value = "";
 
-    				document.getElementById("respectDiv").style.display = "";
-    				document.getElementById("loginDiv").style.display = "none";
     			}
     		</script>
 
@@ -48,7 +53,7 @@
 		</header>
 
 
-		<body onload="hideStuff()">
+		<body onload="hideStuff()" onload="doStuff()">
 
 
 			<!-- allows the user to select who to give or take respect from -->
