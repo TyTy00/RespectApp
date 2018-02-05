@@ -27,6 +27,7 @@ p {
     color: #D5D6D9;
     text-shadow:1px 1px 1px rgba(180, 171, 171, 0.35);
 }
+
 .header {
    
 }
@@ -178,6 +179,28 @@ position:fixed;
 	top:50%;
 	left:43%;
 }
+.center6{
+	position:fixed;
+	top:50%;
+	left:42%;
+}
+.center5{
+	position:fixed;
+	top:50%;}
+.center4{
+	position:fixed;
+	top:55%;
+	left:42%;}
+.center7{
+	position:fixed;
+	top:55%;
+	left:50%;
+}
+.center8{
+	position:fixed;
+	top:60%;
+}
+
 /*size of forms*/
 .size{
 	padding:4px 4px 4px 4px;
@@ -188,7 +211,16 @@ position:fixed;
 	border-radius: 4px;
 
 
+
 }
+.size2{
+	padding:4px 4px 4px 4px;
+	text-align:center;
+	width:100px;
+	left:50%;
+	border-width:1px;
+	border-radius: 4px;
+	}
 .dropdown {
     display: none;
     position: absolute;
