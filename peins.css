@@ -28,11 +28,7 @@ p {
     text-shadow:1px 1px 1px rgba(180, 171, 171, 0.35);
 }
 .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    z-index:-2;
+   
 }
 .sidebars{
 	background-color: black;
@@ -133,12 +129,11 @@ margin: 0px;
 color: #D5D6D9;
 text-shadow: 2px 2px 20px rgba(180, 171, 171, 0.35);
 z-index:-1;
-text-align: center;
+text-align:center;
 text-align:top;
 top:0px;
 left:40%;
 position:fixed;
-transition: 1s;
 }
 
 
