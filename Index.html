@@ -35,9 +35,19 @@
     				document.getElementById('username').value = "";
     				document.getElementById('password').value = "";
 
-    				document.getElementById("respectDiv").style.display = "";
-    				document.getElementById("loginDiv").style.display = "none";
+    				//document.getElementById("respectDiv").style.display = "";
+    				//document.getElementById("loginDiv").style.display = "none";
+    				return username , password;
     				
+    			}
+    			function hide(bool){
+    				if(bool){
+					document.getElementById("respectDiv").style.display = "";
+    				document.getElementById("loginDiv").style.display = "none";    	
+    				}
+    				else{
+
+    				}
     			}
     		</script>
 
@@ -69,7 +79,7 @@
 				<label class="center4 p" for="Password" id="passwordLabel">Password:</label>
 				<input class="center7 size2" id="password" value=""/>
 				<br>
-				<button class="myButton center8" id="submit" onclick="submit()">Submit</button>
+				<button class="myButton center8" id="submit" onclick="hide(Login(submit()))">Submit</button>
 				<br>
 				</div>
 

@@ -1,0 +1,288 @@
+
+<style>
+
+
+h1 {
+    color: rgba(181,180,196,.7);
+    text-align: center;
+    font-family:serif;
+    font-weight: 400;}
+
+
+
+
+body{
+	background-image: url(http://www.ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	  background-blend-mode: lighten;
+	 margin:0;
+
+}
+p {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: #D5D6D9;
+    text-shadow:1px 1px 1px rgba(180, 171, 171, 0.35);
+}
+.p {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: #D5D6D9;
+    text-shadow:1px 1px 1px rgba(180, 171, 171, 0.35);
+}
+
+.header {
+   
+}
+.sidebars{
+	background-color: black;
+}
+/*lame buttons*/
+.button {
+	font-family: arial;
+    background-color: #D5D6D9;
+    border-left:3px solid gray;
+    color: white;
+    padding: 2.3px 20px;
+    text-align: center;
+    text-shadow: 2px 2px rgba(180, 171, 171, 0.35);
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*cool buttons*/
+.Button1 {
+	-moz-box-shadow: 0px 1px 0px 0px #000000;
+	-webkit-box-shadow: 0px 1px 0px 0px #000000;
+	box-shadow: 0px 1px 0px 0px #000000;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a8a6a1), color-stop(1, #faf9f5));
+	background:-moz-linear-gradient(top, #a8a6a1 5%, #faf9f5 100%);
+	background:-webkit-linear-gradient(top, #a8a6a1 5%, #faf9f5 100%);
+	background:-o-linear-gradient(top, #a8a6a1 5%, #faf9f5 100%);
+	background:-ms-linear-gradient(top, #a8a6a1 5%, #faf9f5 100%);
+	background:linear-gradient(to bottom, #a8a6a1 5%, #faf9f5 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8a6a1', endColorstr='#faf9f5',GradientType=0);
+	background-color:#a8a6a1;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #9e9e9e;
+	display:inline-block;
+	cursor:pointer;
+	color:#494a46;
+	font-family:Times New Roman;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.Button1:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #faf9f5), color-stop(1, #a8a6a1));
+	background:-moz-linear-gradient(top, #faf9f5 5%, #a8a6a1 100%);
+	background:-webkit-linear-gradient(top, #faf9f5 5%, #a8a6a1 100%);
+	background:-o-linear-gradient(top, #faf9f5 5%, #a8a6a1 100%);
+	background:-ms-linear-gradient(top, #faf9f5 5%, #a8a6a1 100%);
+	background:linear-gradient(to bottom, #faf9f5 5%, #a8a6a1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf9f5', endColorstr='#a8a6a1',GradientType=0);
+	background-color:#faf9f5;
+}
+.Button1:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 1px 7px 2px rgba(180, 171, 171, 0.35);
+	-webkit-box-shadow: 0px 1px 7px 2px rgba(180, 171, 171, 0.35);
+	box-shadow: 0px 1px 7px 2px rgba(180, 171, 171, 0.35);
+	background-color:rgb(180, 171, 171);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:0px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 1px #2b665e;
+	transition: .5s;
+}
+.myButton:hover {
+	background-color:rgba(180, 171, 171, 0.35);
+	color:black;
+}
+.myButton:active{
+		padding: 3.75px 7.5px;
+		text-align:center;
+
+
+
+}
+
+
+/*RESPECT class (the big word at the top)*/
+.title{
+font-size: 90px;
+position: absolute;
+margin: 0px;
+color: #D5D6D9;
+text-shadow: 2px 2px 20px rgba(180, 171, 171, 0.35);
+text-align:center;
+text-align:top;
+top:0px;
+left:40%;
+position:fixed;
+padding:10px;
+transition: 2s;
+}
+.title:hover{
+	text-shadow:10px 10px 5px rgba(0, 0, 0, 1);
+	border-radius:360px;
+}
+
+
+/*border of smaller words*/
+.pborder{border-style: none none solid none;
+		border-color: black;
+
+        }
+/*border for the BIG words*/
+.border{
+}
+.border:hover{
+}
+
+/*class to lower z index*/
+.z{
+	position: relative;
+	z-index: +1;
+}
+/*middle of screen center*/
+.center{
+	position: fixed;
+	top: 50%;
+	left:56%;
+}
+/*middle of screen and slightly to the right.*/
+.center1{
+	position: fixed;
+	top: 50%;
+	left:59%;
+		padding:5px 8px;
+
+}
+.center2{
+	position: fixed;
+	top: 50%;
+	left:43%;
+}
+.center3{
+	position:fixed;
+	top:50%;
+	left:43%;
+}
+.center6{
+	position:fixed;
+	top:50%;
+	left:42%;
+}
+.center5{
+	position:fixed;
+	top:50%;}
+.center4{
+	position:fixed;
+	top:55%;
+	left:42%;}
+.center7{
+	position:fixed;
+	top:55%;
+	left:50%;
+}
+.center8{
+	position:fixed;
+	top:60%;
+	left:50%;
+}
+
+/*size of forms*/
+.size{
+	padding:4px 4px 4px 4px;
+	text-align:center;
+	width:50px;
+	left:50%;
+	border-width:1px;
+	border-radius: 4px;
+	border-color:rgba(0,0,0,.2);
+	background-color:rgba(255,255,255,.35);
+	box-shadow: 1px 1px 1px 1.5px rgba(0,0,0,.1);
+		box-shadow: inset 1px 1px 2px  rgba(0,0,0,.1);
+
+	display:inline;
+
+
+
+}
+.size2{
+	padding:4px 4px 4px 4px;
+	text-align:center;
+	width:120px;
+	left:50%;
+	border-width:1px;
+	border-radius: 4px;
+	border-color:rgba(0,0,0,.2);
+	background-color:rgba(255,255,255,.35);
+	box-shadow: 1px 1px 1px 1.5px rgba(0,0,0,.1);
+	box-shadow: inset 1px 1px 2px  rgba(0,0,0,.1);
+
+	display:inline;
+	}
+.dropdown {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: #D5D6D9;
+    text-shadow:1px 1px 1px rgba(180, 171, 171, 0.35);
+    border:solid;
+    padding:5px;
+    width:20%;
+    text-align:center;
+    border-radius:1px;
+    transition: 1s;
+    display:inline-block;
+
+
+
+}
+.dropdown:hover {
+   border-radius:20px;
+
+}
+.dropdownmain{
+	padding:5px;
+	width:10%;
+	margin:1%;
+	color: #D5D6E1;
+	background:rgba(180, 171, 171, 0.1);
+	border-radius:20px;
+	transition: .5s;
+
+}
+.dropdownmain:hover{border-radius:0px;
+					padding:10px;
+					width:15%;
+					position: relative;
+					z-index: 3;
+					background:rgba(180, 171, 171, 0);
+					}
+
+}
+
+</style>
