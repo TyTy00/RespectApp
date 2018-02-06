@@ -29,24 +29,33 @@
     				document.getElementById('user').value = document.getElementById('selected').value;
     			}
 
-    			function submit(){
-    				var username = document.getElementById('username').value;
+    			function submitPassword(){
+    				
     				var password = document.getElementById('password').value;
-    				document.getElementById('username').value = "";
+    				
     				document.getElementById('password').value = "";
-
+					
     				//document.getElementById("respectDiv").style.display = "";
     				//document.getElementById("loginDiv").style.display = "none";
-    				return username , password;
+    				return password;
     				
     			}
+    			function submitUsername(){
+    				var username = document.getElementById('username').value;
+    				document.getElementById('username').value = "";
+
+    				return username;
+    			}
     			function hide(bool){
-    				if(bool){
-					document.getElementById("respectDiv").style.display = "";
-    				document.getElementById("loginDiv").style.display = "none";    	
+    				if(true){
+					
+    				
+    				document.getElementById("respectDiv").style.display = "";
+    				document.getElementById("loginDiv").style.display = "none";    
+    				
     				}
     				else{
-
+    				document.write("you dumb")    
     				}
     			}
     		</script>
@@ -79,7 +88,7 @@
 				<label class="center4 p" for="Password" id="passwordLabel">Password:</label>
 				<input class="center7 size2" id="password" value=""/>
 				<br>
-				<button class="myButton center8" id="submit" onclick="hide(Login(submit()))">Submit</button>
+				<button class="myButton center8" id="submit" onclick="hide(LoginUser(submitUsername(),submitPassword()))">Submit</button>
 				<br>
 				</div>
 
@@ -93,6 +102,5 @@
 
 				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> 4000 down
 			</p>
-		
 		</body>
 	</html>
