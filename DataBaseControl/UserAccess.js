@@ -3,9 +3,9 @@
    		]
 	};
 */
-	var fs = require("fs");
+	const fs = require('fs');
 	function printuserJson(){
-	
+	 
 		console.log("\n *START* \n");
 		var content = fs.readFileSync("UserData.json");
 		console.log("Output Content : \n"+ content);
@@ -18,7 +18,7 @@
     obj.UserCount +=1;
     val = obj.UserCount;
     json = JSON.stringify(obj,0,1);
-    fs.writeFile('UserCount.json', json, 'utf8');
+    fs.writeFile('UserCount.json', json, 'utf8')
     return val;
   }
 	function newUser(user, pass){
@@ -37,8 +37,8 @@
 	}
 
 	function findUser(user/*use this to specify username/data/orrespval*/){
-		content = fs.readFileSync('UserData.json', 'utf8');
-       s = null;
+		content = fs.readFileSync('UserData.json', 'utf8')
+       s = null
        
    		 	obj = JSON.parse(content); //now it an object
 
@@ -47,21 +47,21 @@
 
                if(user == obj[key].username)
                {
-                  s = obj[key];
-                  return s;
+                  s = obj[key]
+                  return s
                 }
 
                   else{
-                    s = "bad value";
+                    s = "bad value"
 
                 }	
         
         
 			}
-      return s;
+      return s
 	}
   function getPassword(user){
-    return findUser(user).password;
+    return findUser(user).password
   }
 
   function getrespval(user){
@@ -69,22 +69,23 @@
   }
 
   function PMrespval(user,sign){
-    fs = require('fs');
-    content =  fs.readFileSync('UserData.json','utf8');
+    fs = require('fs')
+    content =  fs.readFileSync('UserData.json','utf8')
     var users = JSON.parse(content);
-    var target = findUser(user);
+    var target = findUser(user)
     for(key in users){
 
-        databaseUsername = users[key].username;
-        currentUserData = target.username;
-        databaseUser = users[key];
+        databaseUsername = users[key].username
+        currentUserData = target.username
+        databaseUser = users[key]
         if(databaseUsername == currentUserData){ //verifies that the user in question and the user you 
           //are incrementing are the same user
           if(sign == "+"){
-            users[key].respval += 1;
+            console.log(users[key].respval)
+            users[key].respval += 1
           }
           else if(sign == "-"){
-            users[key].respval -= 1;
+            users[key].respval -= 1
           }
         }
     }
@@ -93,17 +94,28 @@
   fs.writeFile('UserData.json', json, 'utf8');
   }
 
-  function Login(user,pass){
-
-    userFromJson = findUser(user);
-
+  function LoginUser(user,pass){
+    userFromJson = findUser(user)
+    var boolean = false
     if(user == userFromJson.username && userFromJson.password == pass){
-      return true;
+      
+    return true;
     }
     else{
-      return false;
+    boolean = false;
+
     }
+    return boolean;
   }
+function hello(as,bs){
+  //document.write(as)
+  //document.write(bs)
+  return true;
+}
+
+console.log(LoginUser("nil","pass"))
+
+
 /*var exjson = {'key':'value'};
 //define key value
 exjson.key2 = {'key2':'value2'};
