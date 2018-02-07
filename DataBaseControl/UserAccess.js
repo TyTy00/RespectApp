@@ -3,7 +3,11 @@
    		]
 	};
 */
+<<<<<<< HEAD
+	const fs = require('fs');
+=======
 	var fs = require('/Users/tylerjay/Desktop/JavaRespectApp/node_modules/level-filesystem/index.js');
+>>>>>>> 6d3d42a52a0f5f565e99e3bf3e9ef755bd8d6920
 	function printuserJson(){
 	 
 		console.log("\n *START* \n");
