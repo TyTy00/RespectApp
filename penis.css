@@ -321,6 +321,7 @@ transition: 2s;
 
 	display:inline;
 	}
+/*
 .dropdownmain-content {
     font-family: arial;
     font-size: 20px;
@@ -351,7 +352,7 @@ transition: 2s;
 	border-radius:20px;
 		outline:none;
 
-	transition: .5s;
+	transition: .5s;	
 
 }
 .dropdownmain:hover{border-radius:0px;
@@ -370,5 +371,5 @@ transition: 2s;
 		outline:none;
 
 }
-
+*/
 </style>
