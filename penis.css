@@ -192,13 +192,12 @@ margin: 0px;
 color: #D5D6D9;
 text-shadow: 2px 2px 20px rgba(180, 171, 171, 0.35);
 text-align:center;
-text-align:top;
 top:0px;
-left:40%;
 position:fixed;
 padding:10px;
 transition: 2s;
-	outline:none;
+outline:none;
+left:40%;
 
 }
 .title:hover{
